@@ -23,15 +23,22 @@ const Hero = () => {
 
           {/* Tagline */}
           <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-accent mb-8">
-            Empowering Businesses Through Intelligent AI Solutions
+            AI That Actually Grows Your Business
           </p>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-primary-foreground/80 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Transform your business operations with cutting-edge artificial intelligence. 
-            We build custom AI solutions that drive efficiency, boost revenue, and give you 
-            a competitive edge in the digital age.
+          <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+            We build AI tools that save you time, increase sales, and cut costs. 
+            Simple solutions that work for your business—no tech headaches.
           </p>
+
+          {/* Limited Availability Notice */}
+          <div className="inline-flex items-center gap-2 px-6 py-3 mb-8 bg-accent/20 border-2 border-accent rounded-lg">
+            <span className="text-accent font-bold text-lg">⚡</span>
+            <p className="text-primary-foreground font-semibold">
+              Limited Availability: We Only Onboard 5 Clients Per Month
+            </p>
+          </div>
 
           {/* CTA Button */}
           <Button
