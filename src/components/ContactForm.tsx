@@ -1,103 +1,107 @@
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "@/components/ui/label";
+
 const ContactForm = () => {
   return (
-    <section id="contact" className="py-20 sm:py-28 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-2xl mx-auto">
-          {/* Section Header */}
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-              Get Started
-            </h2>
-            <p className="text-lg text-accent">
-              Let's transform your business with AI
-            </p>
-          </div>
+    <section id="contact" className="py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            Ready to Get Started?
+          </h2>
+          <p className="text-muted-foreground mb-16 text-lg">
+            Let's discuss how AI can transform your business
+          </p>
 
-          {/* Contact Form */}
-          <div className="bg-gradient-to-br from-primary via-primary/95 to-primary/90 p-8 sm:p-10 rounded-2xl shadow-2xl animate-fade-in">
-            <form
-              target="_blank"
-              action="https://formsubmit.co/mertspanforms@gmail.com"
-              method="POST"
-              className="space-y-6"
-            >
-              {/* Name Field */}
-              <div>
-                <label className="block text-primary-foreground font-medium mb-2">
-                  Name *
-                </label>
-                <input
+          <form
+            action="https://formsubmit.co/mertspanforms@gmail.com"
+            method="POST"
+            className="space-y-6"
+          >
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://mertspan.com" />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="name" className="text-sm font-medium text-foreground">
+                  Name
+                </Label>
+                <Input
                   type="text"
+                  id="name"
                   name="name"
-                  placeholder="John Doe"
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-accent bg-primary-foreground/5 text-primary-foreground placeholder:text-primary-foreground/50 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition-all"
+                  placeholder="John Smith"
+                  className="bg-background border-border h-12"
                 />
               </div>
 
-              {/* Email Field */}
-              <div>
-                <label className="block text-primary-foreground font-medium mb-2">
-                  Email *
-                </label>
-                <input
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-sm font-medium text-foreground">
+                  Email
+                </Label>
+                <Input
                   type="email"
+                  id="email"
                   name="email"
-                  placeholder="john@example.com"
                   required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-accent bg-primary-foreground/5 text-primary-foreground placeholder:text-primary-foreground/50 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition-all"
+                  placeholder="john@company.com"
+                  className="bg-background border-border h-12"
                 />
               </div>
+            </div>
 
-              {/* Company Field */}
-              <div>
-                <label className="block text-primary-foreground font-medium mb-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <Label htmlFor="company" className="text-sm font-medium text-foreground">
                   Company
-                </label>
-                <input
+                </Label>
+                <Input
                   type="text"
+                  id="company"
                   name="company"
                   placeholder="Your Company"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-accent bg-primary-foreground/5 text-primary-foreground placeholder:text-primary-foreground/50 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition-all"
+                  className="bg-background border-border h-12"
                 />
               </div>
 
-              {/* Phone Field */}
-              <div>
-                <label className="block text-primary-foreground font-medium mb-2">
-                  Phone
-                </label>
-                <input
+              <div className="space-y-2">
+                <Label htmlFor="phone" className="text-sm font-medium text-foreground">
+                  Phone Number
+                </Label>
+                <Input
                   type="tel"
+                  id="phone"
                   name="phone"
-                  placeholder="+44 7393 993313"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-accent bg-primary-foreground/5 text-primary-foreground placeholder:text-primary-foreground/50 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition-all"
+                  placeholder="+1 (555) 000-0000"
+                  className="bg-background border-border h-12"
                 />
               </div>
+            </div>
 
-              {/* Message Field */}
-              <div>
-                <label className="block text-primary-foreground font-medium mb-2">
-                  Message *
-                </label>
-                <textarea
-                  name="message"
-                  rows={5}
-                  placeholder="Tell us about your project..."
-                  required
-                  className="w-full px-4 py-3 rounded-lg border-2 border-accent bg-primary-foreground/5 text-primary-foreground placeholder:text-primary-foreground/50 focus:border-accent focus:ring-2 focus:ring-accent/50 focus:outline-none transition-all resize-vertical"
-                />
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="message" className="text-sm font-medium text-foreground">
+                Message
+              </Label>
+              <Textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell us about your business needs..."
+                rows={6}
+                className="bg-background border-border resize-none"
+              />
+            </div>
 
-              {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full py-4 px-6 bg-accent hover:bg-accent/90 text-primary font-semibold rounded-lg text-lg transition-all hover:scale-[1.02] shadow-lg hover:shadow-accent/50"
-              >
-                Submit Form
-              </button>
-            </form>
-          </div>
+            <Button
+              type="submit"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold h-12 text-base"
+            >
+              Send Message
+            </Button>
+          </form>
         </div>
       </div>
     </section>

@@ -7,36 +7,30 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/90">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-3xl animate-float" />
-        <div className="absolute bottom-20 right-20 w-72 h-72 bg-accent rounded-full mix-blend-multiply filter blur-3xl animate-float" style={{ animationDelay: "1s" }} />
-      </div>
-
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center max-w-4xl mx-auto animate-fade-in">
+    <section className="relative min-h-screen flex items-center justify-center bg-primary">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+        <div className="text-center animate-fade-in">
           {/* Company Name */}
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 tracking-tight">
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 tracking-tight">
             Mertspan
           </h1>
 
           {/* Tagline */}
-          <p className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-accent mb-8">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-foreground mb-12">
             AI That Actually Grows Your Business
           </p>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-primary-foreground/70 mb-12 max-w-2xl mx-auto leading-relaxed">
             We build AI tools that save you time, increase sales, and cut costs. 
-            Simple solutions that work for your business—no tech headaches.
+            Simple solutions that work for your business.
           </p>
 
           {/* Limited Availability Notice */}
-          <div className="inline-flex items-center gap-2 px-6 py-3 mb-8 bg-accent/20 border-2 border-accent rounded-lg">
-            <span className="text-accent font-bold text-lg">⚡</span>
-            <p className="text-primary-foreground font-semibold">
-              Limited Availability: We Only Onboard 5 Clients Per Month
+          <div className="inline-flex items-center gap-3 px-6 py-3 mb-12 border border-primary-foreground/20 bg-primary-foreground/5">
+            <div className="w-2 h-2 bg-primary-foreground rounded-full" />
+            <p className="text-primary-foreground/90 text-sm font-medium tracking-wide">
+              Limited Availability: 5 Clients Per Month
             </p>
           </div>
 
@@ -44,22 +38,12 @@ const Hero = () => {
           <Button
             onClick={scrollToContact}
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-primary font-semibold px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-accent/50 transition-all hover:scale-105 group"
+            className="bg-primary-foreground text-primary font-semibold px-10 py-6 text-base hover:bg-primary-foreground/90 transition-colors"
           >
             Get Started
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </div>
-      </div>
-
-      {/* Bottom wave decoration */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
-          <path
-            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
-            fill="hsl(var(--background))"
-          />
-        </svg>
       </div>
     </section>
   );

@@ -27,40 +27,38 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-secondary">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-primary text-sm font-semibold mb-4 uppercase tracking-wide">
-            Testimonials
+        <div className="mb-20">
+          <p className="text-muted-foreground text-xs font-medium mb-4 uppercase tracking-wider">
+            Client Results
           </p>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground">
-            We've worked with
-            <br />
-            amazing people
+            Proven Track Record
           </h2>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card border border-border rounded-2xl p-8 hover:shadow-lg transition-shadow"
+              className="bg-card border border-border p-10"
             >
-              <p className="text-foreground text-lg mb-8 leading-relaxed">
+              <p className="text-foreground/80 text-base mb-10 leading-relaxed">
                 "{testimonial.quote}"
               </p>
               
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-bold text-sm">
+                <div className="w-11 h-11 bg-primary flex items-center justify-center">
+                  <span className="text-primary-foreground font-semibold text-xs">
                     {testimonial.initials}
                   </span>
                 </div>
                 <div>
-                  <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-muted-foreground text-sm">{testimonial.role}</p>
+                  <p className="font-semibold text-foreground text-sm">{testimonial.name}</p>
+                  <p className="text-muted-foreground text-xs">{testimonial.role}</p>
                 </div>
               </div>
             </div>
