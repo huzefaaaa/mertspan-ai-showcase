@@ -27,39 +27,29 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20 sm:py-28 bg-secondary/30">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Our Services
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            Comprehensive AI solutions designed to transform your business operations
-          </p>
-        </div>
+    <section id="services" className="py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-20">
+          How We Help You Win
+        </h2>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-xl transition-all duration-300 hover:scale-105 border-accent/20 hover:border-accent/40 bg-card/50 backdrop-blur-sm animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group hover:border-foreground/20 transition-colors border bg-card"
             >
-              <CardHeader>
-                <div className="mb-4 inline-flex p-4 rounded-xl bg-accent/10 group-hover:bg-accent/20 transition-colors">
-                  <service.icon className="h-8 w-8 text-accent" />
+              <CardHeader className="space-y-4">
+                <div className="text-foreground/80">
+                  <service.icon className="h-8 w-8" />
                 </div>
-                <CardTitle className="text-2xl mb-2 group-hover:text-accent transition-colors">
-                  {service.title}
-                </CardTitle>
-                <CardDescription className="text-sm font-medium text-accent/80">
+                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
+                <p className="text-sm font-medium text-foreground/60">
                   {service.subtitle}
-                </CardDescription>
+                </p>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {service.description}
                 </p>
               </CardContent>
