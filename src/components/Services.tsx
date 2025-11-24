@@ -7,21 +7,21 @@ const services = [
     title: "Tailored AI Solutions",
     subtitle: "Custom AI Builds",
     description:
-      "We design and develop custom AI systems specifically engineered for your unique business needs and workflows. Our solutions integrate seamlessly with your existing processes, automating complex tasks and providing intelligent insights that drive strategic decision-making.",
+      "Custom AI systems engineered for your business needs. Seamlessly integrate with existing processes to automate complex tasks and drive strategic decisions.",
   },
   {
     icon: Zap,
     title: "Lightning-Fast Lead Response",
     subtitle: "Speed to Lead",
     description:
-      "Never miss another opportunity with our AI-powered lead response systems. Our intelligent automation responds to inquiries instantly, 24/7, engaging potential customers at the perfect moment. Dramatically improve conversion rates while freeing your team to focus on closing deals.",
+      "AI-powered systems that respond to inquiries instantly, 24/7. Dramatically improve conversion rates while your team focuses on closing deals.",
   },
   {
     icon: FileText,
     title: "Smart Invoice Automation",
     subtitle: "Automated Invoice System",
     description:
-      "Revolutionize your financial operations with intelligent invoicing automation. Our AI-driven system generates, sends, and tracks invoices automatically, reducing manual errors and saving countless hours. Get paid faster with automated follow-ups and intelligent payment reminders.",
+      "Intelligent invoicing that generates, sends, and tracks automatically. Reduce errors, save hours, and get paid faster with automated follow-ups.",
   },
 ];
 

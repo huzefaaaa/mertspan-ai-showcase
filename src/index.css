@@ -36,7 +36,7 @@ All colors MUST be HSL.
     --input: 220 15% 88%;
     --ring: 220 70% 12%;
 
-    --radius: 0.25rem;
+    --radius: 0.75rem;
 
     --shadow-subtle: 0 1px 3px 0 rgb(0 0 0 / 0.03);
     --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
