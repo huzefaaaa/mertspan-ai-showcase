@@ -28,6 +28,9 @@ All colors MUST be HSL.
 
     --accent: 220 15% 92%;
     --accent-foreground: 220 70% 12%;
+    
+    --luxury: 38 80% 52%;
+    --luxury-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -72,6 +75,9 @@ All colors MUST be HSL.
 
     --accent: 220 15% 20%;
     --accent-foreground: 0 0% 98%;
+    
+    --luxury: 38 80% 52%;
+    --luxury-foreground: 0 0% 100%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;

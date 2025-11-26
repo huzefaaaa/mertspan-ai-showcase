@@ -11,12 +11,12 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
         <div className="text-center animate-fade-in">
           {/* Company Name */}
-          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-primary-foreground mb-8 tracking-tight">
+          <h1 className="text-6xl sm:text-7xl lg:text-8xl font-elegant font-bold text-primary-foreground mb-8 tracking-tight">
             Mertspan
           </h1>
 
           {/* Tagline */}
-          <p className="text-2xl sm:text-3xl lg:text-4xl font-medium text-primary-foreground mb-12">
+          <p className="text-2xl sm:text-3xl lg:text-4xl font-elegant font-medium text-primary-foreground mb-12">
             AI That Actually Grows Your Business
           </p>
 
@@ -27,8 +27,8 @@ const Hero = () => {
           </p>
 
           {/* Limited Availability Notice */}
-          <div className="inline-flex items-center gap-3 px-6 py-3 mb-12 border border-primary-foreground/20 bg-primary-foreground/5">
-            <div className="w-2 h-2 bg-primary-foreground rounded-full" />
+          <div className="inline-flex items-center gap-3 px-6 py-3 mb-12 border border-luxury/30 bg-luxury/5 backdrop-blur-sm">
+            <div className="w-2 h-2 bg-luxury rounded-full animate-pulse" />
             <p className="text-primary-foreground/90 text-sm font-medium tracking-wide">
               Limited Availability: 5 Clients Per Month
             </p>
