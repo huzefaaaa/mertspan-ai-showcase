@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'serif': ['Cormorant Garamond', 'serif'],
+        'elegant': ['Cormorant Garamond', 'serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -56,6 +60,10 @@ export default {
           "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
+        },
+        luxury: {
+          DEFAULT: "hsl(var(--luxury))",
+          foreground: "hsl(var(--luxury-foreground))",
         },
       },
       borderRadius: {
