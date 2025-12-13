@@ -37,14 +37,14 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group hover:border-foreground/20 transition-colors border bg-card"
+              className="group hover:border-primary/30 transition-colors border border-border bg-card rounded-xl"
             >
               <CardHeader className="space-y-4">
-                <div className="text-foreground/80">
-                  <service.icon className="h-8 w-8" />
+                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                  <service.icon className="h-6 w-6 text-primary" />
                 </div>
-                <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
-                <p className="text-sm font-medium text-foreground/60">
+                <CardTitle className="text-xl font-bold text-foreground">{service.title}</CardTitle>
+                <p className="text-sm font-medium text-primary">
                   {service.subtitle}
                 </p>
               </CardHeader>

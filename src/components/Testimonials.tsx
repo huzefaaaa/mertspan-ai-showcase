@@ -44,15 +44,15 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card border border-border p-10"
+              className="bg-card border border-border p-10 rounded-xl"
             >
               <p className="text-foreground/80 text-base mb-10 leading-relaxed">
                 "{testimonial.quote}"
               </p>
               
               <div className="flex items-center gap-4">
-                <div className="w-11 h-11 bg-primary flex items-center justify-center">
-                  <span className="text-primary-foreground font-semibold text-xs">
+                <div className="w-11 h-11 bg-primary/20 rounded-full flex items-center justify-center">
+                  <span className="text-primary font-semibold text-xs">
                     {testimonial.initials}
                   </span>
                 </div>
